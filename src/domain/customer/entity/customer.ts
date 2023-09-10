@@ -1,4 +1,4 @@
-import Address from "./address";
+import Address from "../../value-object/address";
 
 export default class Customer {
   private _id: string;
@@ -11,6 +11,7 @@ export default class Customer {
     this._id = id;
     this._name = name;
     this.validate();
+    
   }
 
   get id(): string {
